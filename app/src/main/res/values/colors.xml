@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--   Color for the app bar and other primary UI elements. -->
+    <color name="colorPrimary">#F7F8FD</color>
+
+
+    <!--   A darker variant of the primary color, used for
+           the status bar (on Android 5.0+) and contextual app bars. -->
+
+    <!--   a secondary color for controls like checkboxes and text fields. -->
+    <color name="colorAccent">#c90092</color>
+
+
+    <color name="active_color">#c90092</color>
+    <color name="inactive_color">#878786</color>
+    <color name="white">#FFF</color>
+
+
+
+
+    <color name="searchbox_bg_color">#E1E1E1</color>
+    <color name="header_text_color">#000000</color>
+    <color name="category_text_color">#444343</color>
+    <color name="location_text_color">#484747</color>
+    <color name="product_offer_price">#979797</color>
+    <color name="product_price">#1f1e1e</color>
+
+</resources>

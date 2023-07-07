@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+
+
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="110dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_centerVertical="true"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/liproductImage"
+        android:layout_centerVertical="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:padding="2dp"
+        app:cardCornerRadius="12dp"
+        app:elevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="73dp"
+            android:layout_height="73dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/pImageName"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/liproductImage"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:layout_marginRight="100dp" >
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:padding="4dp"
+            android:text="@string/app_name"
+            android:singleLine="true"
+            android:textColor="@color/header_text_color"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <RelativeLayout
+            android:id="@+id/rlProductDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvProductName"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tvProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="100"
+                android:textColor="@color/product_offer_price"
+                android:background="@drawable/strick_line"/>
+
+            <TextView
+                android:id="@+id/tvProductActualPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_toRightOf="@+id/tvProductPrice"
+                android:text="100 RS"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/product_price"
+                android:textSize="16sp"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:layout_margin="2dp"
+        >
+
+
+
+
+        <Button
+            android:id="@+id/outlinedButton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="+ Add"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            style="@style/Widget.MaterialComponents.Button"
+            android:backgroundTint="@color/colorAccent"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="2dp"
+        android:src="@drawable/dotted"
+        android:layerType="software"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
